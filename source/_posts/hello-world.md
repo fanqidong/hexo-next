@@ -2,6 +2,7 @@
 title: Hello World
 categories: hexo
 tags: hexo
+reward: fasle
 ---
 <!-- HTML方式: 直接在 Markdown 文件中编写 HTML 来调用 -->
 <!-- 其中 class="blockquote-center" 是必须的 -->
