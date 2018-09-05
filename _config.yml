@@ -10,7 +10,7 @@ keywords: zh-Hans
 author: 樊启东
 language: zh-Hans
 timezone:
-avatar: http://img0.utuku.china.com/440x0/news/20180712/a7fd615b-4af1-4202-af3f-bad4422e180b.jpg
+avatar: /images/avatar.jpg
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://fanqidong.github.io/
