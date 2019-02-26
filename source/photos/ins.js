@@ -121,9 +121,10 @@
                     var type = data.type[i];
                     var target = src + (type === 'video' ? '.mp4' : '');
                     src += '';
+
                     liTmpl += '<figure class="thumb" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">\
-                  <a href="' + src + '" itemprop="contentUrl" data-size="1080x1080" data-type="' + type + '" data-target="' + target + '">\
-                    <img class="reward-img" data-type="' + type + '" src="' + minSrc + '"  itemprop="thumbnail" onload="lzld(this)">\
+                  <a href="' + src + '" itemprop="contentUrl" data-size="640x640" data-type="' + type + '" data-target="' + src + '">\
+                    <img class="reward-img" data-type="' + type + '" data-src="' + minSrc + '" src="'+minSrc+'" itemprop="thumbnail" onload="lzld(this)" data-lzled="true">\
                   </a>\
                   <figcaption style="display:none" itemprop="caption description">' + data.text[i] + '</figcaption>\
               </figure>';
@@ -470,7 +471,7 @@
                 return params;
             };
 
-            var openPhotoSwipe = function openPhotoSwipe(index, galleryElement, disableAnimation, fromURL) {
+            var openPhotoSwipe = function (index, galleryElement, disableAnimation, fromURL) {
                 var pswpElement = document.querySelectorAll('.pswp')[0],
                     gallery,
                     options,
